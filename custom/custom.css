@@ -1,0 +1,6 @@
+/* 设置背景图片
+body {
+  background: url(/img/banner-index.png);
+  background-attachment: fixed;
+  background-size: cover;
+} */
