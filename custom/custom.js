@@ -113,19 +113,19 @@ if (lord == "light") {
 }
 
 // 浏览器搞笑标题
-var OriginTitle = document.title;
-var titleTime;
-document.addEventListener("visibilitychange", function () {
-  if (document.hidden) {
-    $('[rel="icon"]').attr("href", "/img/tab.png");
-    document.title = "xxx";
-    clearTimeout(titleTime);
-  } else {
-    $('[rel="icon"]').attr("href", "/img/tab.png");
-    // document.title = "zzz" + OriginTitle;
-    document.title = "zzz ♥ xxx";
-    titleTime = setTimeout(function () {
-      document.title = OriginTitle;
-    }, 2000);
-  }
-});
+// var OriginTitle = document.title;
+// var titleTime;
+// document.addEventListener("visibilitychange", function () {
+//   if (document.hidden) {
+//     $('[rel="icon"]').attr("href", "/img/tab.png");
+//     document.title = "xxx";
+//     clearTimeout(titleTime);
+//   } else {
+//     $('[rel="icon"]').attr("href", "/img/tab.png");
+//     // document.title = "zzz" + OriginTitle;
+//     document.title = " xxx ♥ zzz";
+//     titleTime = setTimeout(function () {
+//       document.title = OriginTitle;
+//     }, 2000);
+//   }
+// });

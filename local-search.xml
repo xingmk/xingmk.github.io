@@ -4,9 +4,9 @@
   
   
   <entry>
-    <title>git commands</title>
-    <link href="/2023/05/25/git-commands/"/>
-    <url>/2023/05/25/git-commands/</url>
+    <title>Git</title>
+    <link href="/2023/05/25/Git/"/>
+    <url>/2023/05/25/Git/</url>
     
     <content type="html"><![CDATA[<ul><li><p><code>git init</code> :把当前文件夹变为一个 git 仓库 创建 git 仓库</p></li><li><p><code>git status</code> :查看当前仓库文件变化情况</p></li><li><p><code>git add</code> :添加修改（可使用 git add . 来添加当前仓库所有修改）</p></li><li><p><code>git diff</code> :本次还没有提交的更改（比较工作区与暂存区的区别）</p></li><li><p><code>git reset</code> :回滚，撤销提交操作</p></li><li><p><code>git config --global user.name &quot;xxx&quot;</code> :向 Git 提交自己身份（name）</p></li><li><p><code>git config --global user.email &quot;xxx@xx.com&quot;</code> :向 Git 提交自己身份（email）：</p></li><li><p><code>git commit -m &quot;xxx&quot;</code> :向 Git 提交内容： （xx 为对提交的内容进行描述）</p></li><li><p>让 Git 不提交某些文件&#x2F;忽略某些文件：创建文件 .gitignore 并在文件中添加文件名&#x2F;文件夹名 即可 （若 git 已经开始追踪某些文件 则需要 next step）</p></li><li><p><code>git rm --cached xx</code> :让 Git 不再追踪某个&#x2F;某些文件： （xx 为文件名）</p></li><li><p><code>git branch xx</code> :Git 添加分支（xx 为分支名）</p></li><li><p><code>git checkout xx</code> :Git 切换分支（xx 为分支名）</p></li><li><p><code>git merge xx</code> :合并分支（xx 为分支名）</p></li><li><p><code>git branch</code> :列出本地分支</p></li><li><p><code>git branch -d xx</code> :删除分支 (xx 为分支名，-D 强制删除)</p></li><li><p><code>git remote add origin xxx</code> :添加远程仓库： （xxx 为远程地址）</p></li><li><p><code>git push --set-upstream</code> :设置本地分支追踪远程分支</p></li><li><p><code>git clone xxx</code> :克隆仓库（xxx 为远程地址）</p></li></ul>]]></content>
     
