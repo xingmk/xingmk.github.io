@@ -56,13 +56,29 @@
   
   
   <entry>
-    <title>Git guide</title>
+    <title>Git Guide</title>
     <link href="/2023/05/27/Git-guide/"/>
     <url>/2023/05/27/Git-guide/</url>
     
     <content type="html"><![CDATA[]]></content>
     
     
+    <categories>
+      
+      <category>Linux</category>
+      
+      <category>Tools</category>
+      
+      <category>Git-guide</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>git-guide</tag>
+      
+    </tags>
     
   </entry>
   
@@ -76,17 +92,33 @@
     <content type="html"><![CDATA[]]></content>
     
     
+    <categories>
+      
+      <category>Hexo</category>
+      
+      <category>commands</category>
+      
+      <category>Commands, hexo]</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>hexo-commands</tag>
+      
+    </tags>
     
   </entry>
   
   
   
   <entry>
-    <title>Hexo+Github = blogs</title>
+    <title>Hexo+Github = Blogs</title>
     <link href="/2023/05/26/Hexo-Github-blogs/"/>
     <url>/2023/05/26/Hexo-Github-blogs/</url>
     
-    <content type="html"><![CDATA[<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><ol><li>Github 账号</li><li>jfdas</li></ol>]]></content>
+    <content type="html"><![CDATA[<h1 id="Prepare"><a href="#Prepare" class="headerlink" title="Prepare"></a>Prepare</h1><ol><li>需要一个 <code>Github</code> 账号 如果没有可在 <a href="https://github.com/">官网</a> 申请</li><li>需要安装 <code>Git</code> <a href="https://git-scm.com/downloads">git下载</a> </li><li>需要安装 <code>Nodejs</code> <a href="https://nodejs.org/en/download">nodejs下载</a></li></ol><h1 id="Create-repositories"><a href="#Create-repositories" class="headerlink" title="Create repositories"></a>Create repositories</h1><p>在GitHub中创建仓库<br>名字必须是: <code>Github的用户名.github.io</code> </p><h2 id="演示"><a href="#演示" class="headerlink" title="演示"></a>演示</h2><p>在新创建的仓库中 <code>create a new file</code><br>文件名字必须为： <code>index.html</code> </p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>test<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>xmk的个人主页<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello ~<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span><br></code></pre></td></tr></table></figure><p>在浏览器中打开 <code>https://&lt;用户名&gt;.github.io</code>  </p><h1 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h1><p><a href="https://hexo.io/zh-cn/">官网</a> </p><ul><li><p>安装：  </p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">npm install -g hexo-cli<br></code></pre></td></tr></table></figure></li><li><p>创建一个项目<code>hexo-blog</code> </p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs sh">hexo init hexo-blog<br><span class="hljs-built_in">cd</span> hexo-blog<br>npm install<br><br></code></pre></td></tr></table></figure></li><li><p>本地启动</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs sh">hexo g<br>hexo server<br></code></pre></td></tr></table></figure><p>浏览器访问 <code>http://localhost:4000</code></p></li></ul><h1 id="更换主题：Fluid"><a href="#更换主题：Fluid" class="headerlink" title="更换主题：Fluid"></a>更换主题：Fluid</h1><p><a href="https://github.com/fluid-dev/hexo-theme-fluid">Fluid官网</a> </p><p>安装  </p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">npm install --save hexo-theme-fluid<br></code></pre></td></tr></table></figure><p>更换主题  </p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">theme:</span> <span class="hljs-string">fluid</span>  <span class="hljs-comment"># 指定主题</span><br><span class="hljs-attr">language:</span> <span class="hljs-string">zh-CN</span>  <span class="hljs-comment"># 指定语言，会影响主题显示的语言，按需修改</span><br><br></code></pre></td></tr></table></figure><p>本地启动  </p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs sh">hexo g -d<br>hexo s<br></code></pre></td></tr></table></figure><p>浏览器访问 <code>http://localhost:4000</code> </p><h1 id="部署Github"><a href="#部署Github" class="headerlink" title="部署Github"></a>部署Github</h1><p>安装hexo-deployer-git  </p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">npm install hexo-deployer-git --save<br></code></pre></td></tr></table></figure><p>修改根目录下的 <code>_config.yml</code> ，配置 <code>GitHub</code>  相关信息</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">deploy:</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br>  <span class="hljs-attr">repo:</span> <span class="hljs-string">https://github.com/username/username.github.io.git</span><br>  <span class="hljs-attr">branch:</span> <span class="hljs-string">main</span><br>  <span class="hljs-attr">token:</span> <span class="hljs-string">.....</span> <br></code></pre></td></tr></table></figure><p>其中 <code>token </code> 为 <code>GitHub </code> 的 <code>Personal access tokens</code> ，获取方式如下图<br><img src="/img/token.png" alt="token"> </p><p>部署到Github</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">hexo g -d<br></code></pre></td></tr></table></figure><p>浏览器访问 <code>https://username.github.io</code>  </p>]]></content>
     
     
     <categories>
@@ -94,6 +126,10 @@
       <category>Hexo</category>
       
       <category>create</category>
+      
+      <category>Create</category>
+      
+      <category>hexo-blogs</category>
       
     </categories>
     
@@ -113,7 +149,7 @@
     <link href="/2023/05/25/Git-commands/"/>
     <url>/2023/05/25/Git-commands/</url>
     
-    <content type="html"><![CDATA[<ul><li><p><code>git init</code> :把当前文件夹变为一个 git 仓库 创建 git 仓库</p></li><li><p><code>git status</code> :查看当前仓库文件变化情况</p></li><li><p><code>git add</code> :添加修改（可使用 git add . 来添加当前仓库所有修改）</p></li><li><p><code>git diff</code> :本次还没有提交的更改（比较工作区与暂存区的区别）</p></li><li><p><code>git reset</code> :回滚，撤销提交操作</p></li><li><p><code>git config --global user.name &quot;xxx&quot;</code> :向 Git 提交自己身份（name）</p></li><li><p><code>git config --global user.email &quot;xxx@xx.com&quot;</code> :向 Git 提交自己身份（email）：</p></li><li><p><code>git commit -m &quot;xxx&quot;</code> :向 Git 提交内容： （xx 为对提交的内容进行描述）</p></li><li><p>让 Git 不提交某些文件&#x2F;忽略某些文件：创建文件 .gitignore 并在文件中添加文件名&#x2F;文件夹名 即可 （若 git 已经开始追踪某些文件 则需要 next step）</p></li><li><p><code>git rm --cached xx</code> :让 Git 不再追踪某个&#x2F;某些文件： （xx 为文件名）</p></li><li><p><code>git branch xx</code> :Git 添加分支（xx 为分支名）</p></li><li><p><code>git checkout xx</code> :Git 切换分支（xx 为分支名）</p></li><li><p><code>git merge xx</code> :合并分支（xx 为分支名）</p></li><li><p><code>git branch</code> :列出本地分支</p></li><li><p><code>git branch -d xx</code> :删除分支 (xx 为分支名，-D 强制删除)</p></li><li><p><code>git remote add origin xxx</code> :添加远程仓库： （xxx 为远程地址）</p></li><li><p><code>git push --set-upstream</code> :设置本地分支追踪远程分支</p></li><li><p><code>git clone xxx</code> :克隆仓库（xxx 为远程地址）</p></li></ul>]]></content>
+    <content type="html"><![CDATA[<ul><li><p><code>git config --global user.name &quot;xxx&quot;</code> :向 Git 提交自己身份（name）</p></li><li><p><code>git config --global user.email &quot;xxx@xx.com&quot;</code> :向 Git 提交自己身份（email）：</p></li><li><p><code>git init</code> :把当前文件夹变为一个 git 仓库 创建 git 仓库</p></li><li><p><code>git status</code> :查看当前仓库文件变化情况</p></li><li><p><code>git add</code> :添加修改（可使用 git add . 来添加当前仓库所有修改）</p></li><li><p><code>git diff</code> :本次还没有提交的更改（比较工作区与暂存区的区别）</p></li><li><p><code>git reset</code> :回滚，撤销提交操作</p></li><li><p><code>git commit -m &quot;xxx&quot;</code> :向 Git 提交内容： （xx 为对提交的内容进行描述）</p></li><li><p>让 Git 不提交某些文件&#x2F;忽略某些文件：创建文件 .gitignore 并在文件中添加文件名&#x2F;文件夹名 即可 （若 git 已经开始追踪某些文件 则需要 next step）</p></li><li><p><code>git rm --cached xx</code> :让 Git 不再追踪某个&#x2F;某些文件： （xx 为文件名）</p></li><li><p><code>git branch xx</code> :Git 添加分支（xx 为分支名）</p></li><li><p><code>git checkout xx</code> :Git 切换分支（xx 为分支名）</p></li><li><p><code>git merge xx</code> :合并分支（xx 为分支名）</p></li><li><p><code>git branch</code> :列出本地分支</p></li><li><p><code>git branch -d xx</code> :删除分支 (xx 为分支名，-D 强制删除)</p></li><li><p><code>git remote add origin xxx</code> :添加远程仓库： （xxx 为远程地址）</p></li><li><p><code>git push --set-upstream</code> :设置本地分支追踪远程分支</p></li><li><p><code>git clone xxx</code> :克隆仓库（xxx 为远程地址）</p></li></ul>]]></content>
     
     
     <categories>
@@ -122,7 +158,7 @@
       
       <category>Tools</category>
       
-      <category>Git</category>
+      <category>Git-commands</category>
       
       <category>Commands</category>
       
@@ -133,7 +169,7 @@
     
     <tags>
       
-      <tag>Git-guide</tag>
+      <tag>git-commands</tag>
       
     </tags>
     
@@ -146,16 +182,20 @@
     <link href="/2023/05/25/Manjaro-install-guide/"/>
     <url>/2023/05/25/Manjaro-install-guide/</url>
     
-    <content type="html"><![CDATA[<h1 id="Manjaro-install"><a href="#Manjaro-install" class="headerlink" title="Manjaro install"></a>Manjaro install</h1><h2 id="Prepare"><a href="#Prepare" class="headerlink" title="Prepare"></a>Prepare</h2><ol><li><p>Download manjaro.ios file<br>Address: <a href="https://manjaro.org/download/">manjaro.ios</a></p></li><li><p>Make U-disk<br>Tool:<a href="https://rufus.ie/zh/">Rufus</a></p></li><li><p>Go to ur UEFI and close these chooses<br>Turn off: <code>Secure Boot</code></p></li></ol><h2 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h2><ol><li>Start OS from U-disk</li><li>Connect Wi-Fe</li><li>Start Installing</li><li>Reboot</li></ol><h2 id="Question"><a href="#Question" class="headerlink" title="Question:"></a>Question:</h2><ul><li><h4 id="Maybe-your-wife-cann’t-work"><a href="#Maybe-your-wife-cann’t-work" class="headerlink" title="Maybe your wife cann’t work"></a>Maybe your wife cann’t work</h4></li></ul><ol><li>Connect the wire-net<br><code>sudo pacman -S yay</code></li><li>Check your wireless network card model and download the corresponding driver<br><code>yay -S ...</code></li></ol><blockquote><p>eg: if your wireless network card is rtl18821ce<br><code>yay -S rtl18821ce-dkms-git</code> 3. Check your linux kernel and download the corresponding headers<br><code>sudo pacman -S linux000-headers</code></p></blockquote><blockquote><p>eg: if your linux kernel is 4.19<br><code>sudo pacman -S linux419-headers</code></p></blockquote><ol start="4"><li>Restart driver<br><code>sudo modprobe network-card-model</code><blockquote><p>eg: 8821ce<br><code>sudo modprobe 8821ce</code></p></blockquote></li></ol><h2 id="Change-The-Mirrors-To-China"><a href="#Change-The-Mirrors-To-China" class="headerlink" title="Change The Mirrors To China"></a>Change The Mirrors To China</h2><p><strong>First:</strong><br><code>sudo nano /etc/pacman.conf </code></p><p><strong>Add these</strong></p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs awk">【archlinuxcn】<br> SigLevel = Never<br> Server = https: <span class="hljs-regexp">//mi</span>rrors.tuna.tsinghua.edu.cn<span class="hljs-regexp">/archlinuxcn/</span><span class="hljs-variable">$arch</span><br></code></pre></td></tr></table></figure><p><strong>Execute</strong></p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs sh">1. sudo pacman-mirrors -c China<br>2. sudo pacman -Syyu<br>3. reboot<br></code></pre></td></tr></table></figure><h2 id="Do-Some-Config"><a href="#Do-Some-Config" class="headerlink" title="Do Some Config"></a>Do Some Config</h2><ul><li><p><strong>Install editor</strong><br><code>sudo pacman -S neovim</code></p></li><li><p><strong>Shell: fish</strong></p></li></ul><ol><li><p>Install fish:<br><code>sudo pacman -S fish</code></p></li><li><p>Change shell to fish:<br><code>chsh -s /usr/bin/fish</code></p></li><li><p>Install fish extension:<br><code>curl -L https://get.oh-my.fish | fish</code></p></li><li><p>U can change theme by this command:<br><code>fish_config</code></p></li></ol><ul><li><strong>WM: i3</strong></li></ul><ol><li><p>Install i3WM:<br><code>sudo pacman -S i3</code></p></li><li><p><strong>Modify the i3-config</strong><br><code>git clone https:github.com/Xingmk/i3.git</code><br>or<br><code>vim ~/.config/i3/config</code></p></li><li><p>Go to i3WM:</p><blockquote><ol><li>Log out your account</li><li>In the lower right foot landing interface has a setting symbol click and select the i3 and landed</li></ol></blockquote></li></ol><ul><li><p><strong>Terminal: st</strong><br><code>git clone https:github.com/Xingmk/st.git</code></p></li><li><p><strong>Display</strong><br><code>sudo pacman -S feh variety picom</code></p></li><li><p><strong>Modify keyboard</strong></p></li></ul><ol><li><p>Install firstly xorg:<br><code>sudo pacman -S xorg</code></p></li><li><p>The export file:<br><code>xmodmap -pke &gt; ~/.xmodmap</code></p></li><li><p>Edit it:<br><code>~/.xmodmap</code></p></li></ol><ul><li><strong>Chinese input method</strong></li></ul><ol><li><p>Download fcitx5<br><code>sudo pacman -S fcitx5-im fcitx5-chinese-addons fcitx5-pinyin-zhwiki</code></p></li><li><p>Configure the environment variables<br><code>vim ~/.pam_environment</code></p></li></ol><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs routeros">GTK_IM_MODULE <span class="hljs-attribute">DEFAULT</span>=fcitx<br>QT_IM_MODULE  <span class="hljs-attribute">DEFAULT</span>=fcitx<br>XMODIFIERS    <span class="hljs-attribute">DEFAULT</span>=\@im=fcitx<br>SDL_IM_MODULE <span class="hljs-attribute">DEFAULT</span>=fcitx<br></code></pre></td></tr></table></figure><h2 id="Other-stuffs"><a href="#Other-stuffs" class="headerlink" title="Other stuffs"></a>Other stuffs</h2><p><strong>Look IP Address</strong><br><code>curl cip.cc</code></p><p><strong>Voice</strong><br><code>sudo pacman -S sof-firmware</code></p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs sh">1. dmenu<br> sudo pacman -S dmenu<br><br>2. pip paru nodejs ccls<br> sudo pacman -S python-pip paru yarn nodejs ccls npm<br><br>3. music dingtalk google-chrome<br> paru -S qqmusic-bin dingtalk-bin google-chrome-bin<br></code></pre></td></tr></table></figure><h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a><strong>Git</strong></h2><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs pgsql">git config –<span class="hljs-keyword">global</span> <span class="hljs-keyword">user</span>.name <span class="hljs-string">&#x27;xxxxx&#x27;</span><br>git config –<span class="hljs-keyword">global</span> <span class="hljs-keyword">user</span>.email <span class="hljs-string">&#x27;xxx@xx.xxx&#x27;</span><br><br>ssh-keygen -t rsa -C <span class="hljs-string">&#x27;xxx@xx.xxx&#x27;</span><br></code></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h1 id="Prepare"><a href="#Prepare" class="headerlink" title="Prepare"></a>Prepare</h1><ol><li><p>Download mirror<br>Address: <a href="https://manjaro.org/download/">manjaro.ios</a></p></li><li><p>Make U-disk<br>Tool:<a href="https://rufus.ie/zh/">Rufus</a></p></li><li><p>Close something in UEFI<br>Turn off: <code>Secure Boot</code></p></li></ol><blockquote><p>How to into UEFI： resolve yourself</p></blockquote><h1 id="Begin"><a href="#Begin" class="headerlink" title="Begin"></a>Begin</h1><ol><li>Start OS from U-disk</li><li>Connect Internet</li><li>Start Install</li><li>Reboot</li></ol><blockquote><p>How to Start： resolve yourself</p></blockquote><h2 id="Question"><a href="#Question" class="headerlink" title="Question:"></a>Question:</h2><ul><li><h3 id="Maybe-your-wife-cann’t-work"><a href="#Maybe-your-wife-cann’t-work" class="headerlink" title="Maybe your wife cann’t work"></a>Maybe your wife cann’t work</h3></li></ul><ol><li>Connect the wire-net<br><code>sudo pacman -S yay</code></li><li>Check your wireless network card model and download the corresponding driver<br><code>yay -S ...</code></li></ol><blockquote><p>eg: if your wireless network card is rtl18821ce<br><code>yay -S rtl18821ce-dkms-git</code> 3. Check your linux kernel and download the corresponding headers<br><code>sudo pacman -S linux000-headers</code></p></blockquote><blockquote><p>eg: if your linux kernel is 4.19<br><code>sudo pacman -S linux419-headers</code></p></blockquote><ol start="4"><li>Restart driver<br><code>sudo modprobe network-card-model</code>  <blockquote><p>eg: 8821ce<br><code>sudo modprobe 8821ce</code></p></blockquote></li></ol><h1 id="Change-Mirrors-To-China"><a href="#Change-Mirrors-To-China" class="headerlink" title="Change Mirrors To China"></a>Change Mirrors To China</h1><p><strong>First:</strong><br><code>sudo nano /etc/pacman.conf </code></p><p><strong>Add</strong></p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs awk">【archlinuxcn】<br> SigLevel = Never<br> Server = https: <span class="hljs-regexp">//mi</span>rrors.tuna.tsinghua.edu.cn<span class="hljs-regexp">/archlinuxcn/</span><span class="hljs-variable">$arch</span><br></code></pre></td></tr></table></figure><p><strong>And Then</strong></p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs sh">1. sudo pacman-mirrors -c China<br>2. sudo pacman -Syyu<br>3. reboot<br></code></pre></td></tr></table></figure><h1 id="Do-Config"><a href="#Do-Config" class="headerlink" title="Do Config"></a>Do Config</h1><ul><li><p><strong>Install editor</strong><br><code>sudo pacman -S neovim</code></p></li><li><p><strong>Shell: fish</strong></p></li></ul><ol><li><p>Install fish:<br><code>sudo pacman -S fish</code></p></li><li><p>Change shell to fish:<br><code>chsh -s /usr/bin/fish</code></p></li><li><p>Install fish extension:<br><code>curl -L https://get.oh-my.fish | fish</code></p></li><li><p>U can change theme by this command:<br><code>fish_config</code></p></li></ol><ul><li><strong>WM: i3</strong></li></ul><ol><li><p>Install i3WM:<br><code>sudo pacman -S i3</code></p></li><li><p><strong>Modify the i3-config</strong><br><code>git clone https:github.com/Xingmk/i3.git</code><br>or<br><code>nvim ~/.config/i3/config</code></p></li><li><p>Switch to i3WM:</p><blockquote><ol><li>Log out your account</li><li>In the lower right foot landing interface has a setting symbol click and select the i3 and landed</li></ol></blockquote></li></ol><ul><li><p><strong>Terminal: st</strong><br><code>git clone https:github.com/Xingmk/st.git</code></p></li><li><p><strong>Display</strong><br><code>sudo pacman -S feh variety picom</code></p></li><li><p><strong>Modify keyboard</strong></p></li></ul><ol><li><p>Install firstly xorg:<br><code>sudo pacman -S xorg</code></p></li><li><p>The export file:<br><code>xmodmap -pke &gt; ~/.xmodmap</code></p></li><li><p>Edit it:<br><code>~/.xmodmap</code></p></li></ol><ul><li><strong>Chinese input method</strong></li></ul><ol><li><p>Download fcitx5<br><code>sudo pacman -S fcitx5-im fcitx5-chinese-addons fcitx5-pinyin-zhwiki</code></p></li><li><p>Configure the environment variables<br><code>vim ~/.pam_environment</code></p></li></ol><p><strong>Add</strong> </p><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs routeros">GTK_IM_MODULE <span class="hljs-attribute">DEFAULT</span>=fcitx<br>QT_IM_MODULE  <span class="hljs-attribute">DEFAULT</span>=fcitx<br>XMODIFIERS    <span class="hljs-attribute">DEFAULT</span>=\@im=fcitx<br>SDL_IM_MODULE <span class="hljs-attribute">DEFAULT</span>=fcitx<br></code></pre></td></tr></table></figure><h1 id="Other-stuffs"><a href="#Other-stuffs" class="headerlink" title="Other stuffs"></a>Other stuffs</h1><ul><li><strong>Look IP Address</strong><br><code>curl cip.cc</code></li></ul><blockquote><p>If computer donn’t have voice</p></blockquote><ul><li><strong>Voice</strong><br><code>sudo pacman -S sof-firmware</code></li></ul><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs sh">sudo pacman -S dmenu<br><br>sudo pacman -S paru yarn nodejs npm ccls python-pip<br><br>paru -S qqmusic-bin dingtalk-bin google-chrome-bin<br></code></pre></td></tr></table></figure>]]></content>
     
     
     <categories>
       
       <category>Linux</category>
       
+      <category>Create</category>
+      
       <category>Manjaro</category>
       
       <category>Manjaro-install</category>
+      
+      <category>Manjaro</category>
       
     </categories>
     
