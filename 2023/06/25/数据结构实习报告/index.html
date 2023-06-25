@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html lang="zh-CN" data-default-color-scheme=dark>
+<html lang="zh-CN" data-default-color-scheme=light>
 
 
 
@@ -16,15 +16,15 @@
   <meta name="author" content="EdisonX">
   <meta name="keywords" content="">
   
-    <meta name="description" content="一、马踏棋盘游戏开发马能走的 8 种路径可能 12int hx[horseMove] &#x3D; &amp;#123;2, 1, -1, -2, -2, -1, 1, 2&amp;#125;;int hy[horseMove] &#x3D; &amp;#123;1, 2, 2, 1, -1, -2, -2, -1&amp;#125;;  检查 horse 移动的合法性并且 horse 并未访问过 123bool checkHealth(int x">
+    <meta name="description" content="一、马踏棋盘游戏开发问题描述设计一个国际象棋的马踏遍棋盘的演示程序。 基本要求将马随机放在国际象棋的 8×8 棋盘 Board[0 ～ 7][0～7]的某个方格中，马按走棋规则进行移动。要求每个方格只进入一次，走遍棋盘上全部 64 个方格。编制递归和非递归程序，求出马的行走路线，并按求出的行走路线，将数字 1，2，…，64 依次填入一个 8×8 的方阵，输出之。 马能走的 8 种路径可能 12in">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数据结构实习报告">
 <meta property="og:url" content="http://example.com/2023/06/25/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AE%9E%E4%B9%A0%E6%8A%A5%E5%91%8A/index.html">
 <meta property="og:site_name" content="EdisonX">
-<meta property="og:description" content="一、马踏棋盘游戏开发马能走的 8 种路径可能 12int hx[horseMove] &#x3D; &amp;#123;2, 1, -1, -2, -2, -1, 1, 2&amp;#125;;int hy[horseMove] &#x3D; &amp;#123;1, 2, 2, 1, -1, -2, -2, -1&amp;#125;;  检查 horse 移动的合法性并且 horse 并未访问过 123bool checkHealth(int x">
+<meta property="og:description" content="一、马踏棋盘游戏开发问题描述设计一个国际象棋的马踏遍棋盘的演示程序。 基本要求将马随机放在国际象棋的 8×8 棋盘 Board[0 ～ 7][0～7]的某个方格中，马按走棋规则进行移动。要求每个方格只进入一次，走遍棋盘上全部 64 个方格。编制递归和非递归程序，求出马的行走路线，并按求出的行走路线，将数字 1，2，…，64 依次填入一个 8×8 的方阵，输出之。 马能走的 8 种路径可能 12in">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-06-25T08:14:00.000Z">
-<meta property="article:modified_time" content="2023-06-25T08:19:45.426Z">
+<meta property="article:modified_time" content="2023-06-25T08:43:08.941Z">
 <meta property="article:author" content="EdisonX">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -240,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          6.5k 字
+          6.6k 字
         
       </span>
     
@@ -251,7 +251,7 @@
         
         
         
-          30 分钟
+          31 分钟
         
       </span>
     
@@ -302,7 +302,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：1 分钟前
+                    本文最后更新于：几秒前
                   
                 
               </p>
@@ -310,7 +310,9 @@
             
               <div class="markdown-body">
                 
-                <h1 id="一、马踏棋盘游戏开发"><a href="#一、马踏棋盘游戏开发" class="headerlink" title="一、马踏棋盘游戏开发"></a>一、马踏棋盘游戏开发</h1><p>马能走的 8 种路径可能</p>
+                <h1 id="一、马踏棋盘游戏开发"><a href="#一、马踏棋盘游戏开发" class="headerlink" title="一、马踏棋盘游戏开发"></a>一、马踏棋盘游戏开发</h1><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>设计一个国际象棋的马踏遍棋盘的演示程序。</p>
+<h4 id="基本要求"><a href="#基本要求" class="headerlink" title="基本要求"></a>基本要求</h4><p>将马随机放在国际象棋的 8×8 棋盘 Board[0 ～ 7][0～7]的某个方格中，马按走棋规则进行移动。要求每个方格只进入一次，走遍棋盘上全部 64 个方格。编制递归和非递归程序，求出马的行走路线，并按求出的行走路线，将数字 1，2，…，64 依次填入一个 8×8 的方阵，输出之。</p>
+<p>马能走的 8 种路径可能</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-type">int</span> hx[horseMove] = &#123;<span class="hljs-number">2</span>, <span class="hljs-number">1</span>, <span class="hljs-number">-1</span>, <span class="hljs-number">-2</span>, <span class="hljs-number">-2</span>, <span class="hljs-number">-1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>&#125;;<br><span class="hljs-type">int</span> hy[horseMove] = &#123;<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>, <span class="hljs-number">-1</span>, <span class="hljs-number">-2</span>, <span class="hljs-number">-2</span>, <span class="hljs-number">-1</span>&#125;;<br></code></pre></td></tr></table></figure>
 
 <p>检查 horse 移动的合法性并且 horse 并未访问过</p>
